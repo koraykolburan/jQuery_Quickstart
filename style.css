@@ -59,6 +59,42 @@ h1 {
     color: #fff;
 }
 
+.account {
+    display: none;
+    position: absolute;
+    right: 0;
+    border: 1px solid #ddd;
+    border-top: none;
+    width: 20%;
+    background-color:#9d9898 ;
+    border-radius: 12px;
+    padding: 0.3em;
+}
+
+.menu-item > input[type=text] {
+    float: left;
+    font-size: 20px;
+    border-radius: 10px;
+    top: 22%;
+    left: 10%;
+    position: absolute;
+    width: 50%;
+}
+
+.menu-item button {
+    float: left;
+    padding: 6px 10px;
+    margin-left: 1px;
+    top: 25%;
+    left: 60%;
+    border-radius: 15px;
+    position: absolute;
+    background: #ddd;
+    font-size: 11px;
+    border: none;
+    cursor: pointer;
+}
+
 .cf {
     clear: both;
 }
@@ -73,4 +109,51 @@ h1 {
 .right-corner > a:hover {
     background-color: #333;
     color: lightblue;
+}
+
+#span1 {
+    color:darkorchid;
+}
+
+header {
+    position: sticky;
+    z-index: 1;
+}
+
+/* Event Delagation Bubbling and  */
+.box-1{
+    position: absolute;
+    border: 1px solid pink;
+    border-radius: 12px;
+    background-color: pink;
+    width: 75%;
+    height: 50%;
+    display: inline;
+    left: 12.5%;
+    right: 12.5%;
+    text-align: center;
+}
+
+.box-2 {
+    position: absolute;
+    border: 1px solid blue;
+    border-radius: 12px;
+    background-color: blue;
+    color: white;
+    width: 50%;
+    height: 75%;
+    left: 25%;
+    right: 25%;
+}
+.box-3 {
+    position: relative;
+    border: 1px solid lightblue;
+    border-radius: 12px;
+    background-color: lightblue;
+    color: #333;
+    width: 50%;
+    height: 50%;
+    left: 25%;
+    right: 25%;
+    text-align: center;
 }

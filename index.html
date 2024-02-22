@@ -6,6 +6,7 @@
     <title>jQuery Quick Start</title>
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
 </head>
 <body>
@@ -32,7 +33,8 @@
                     </div>
                 </li>
                 <li class="menu-item">
-                    <a href="#">Discounted Products</a>
+                    <input type="text" placeholder="Search..."></input>
+                    <button type="submit"><i class="fa fa-search"></i></button>
                     <div class="menu-item-info">
                         <ul>
                             <li><a href="#">Jackets and coats</a></li>
@@ -44,9 +46,9 @@
                         </ul>
                     </div>
                 </li>
-                <li class="menu-item">
-                    <a href="#">Registration & Contact</a>
-                    <div class="menu-item-info">
+                <li class="menu-item right-corner">
+                    <a href="#">Account</a>
+                    <div class="account">
                         <ul>
                             <li><a href="#">Sign In</a></li>
                             <li><a href="#">Sign Up</a></li>
@@ -54,9 +56,9 @@
                     </div>
                 </li>
                 <li class="menu-item right-corner">
-                    <a href="#">About Us</a>
+                    <a href="#" target="_blank">Favourites</a>
                 </li>
-
+                
                 <div class="cf"></div>
             </ul>
         </nav>
@@ -64,6 +66,23 @@
 
     <section>
         <div class="main-content">
+            <h3>What is Event Bubbling?</h3>
+            <p>Event Bubbling is when click on the third div that you have nested 3 div boxes before, it triggered from bottom to top like from box-3 to box-2 and box-1. (<span id="span1">Opens from the inside-out.</span>)</p>
+            <h3>What is Event Capturing?</h3>
+            <p>Event Capturing is Although when you click on the third div that you have nested 3 div boxes before, it triggered from top to bottom like from box-1 to box-2 and box-3. (<span id="span1">Opens from the outside-in.</span>)</p>
+            <p>As default, JavaScript set the event flow as <u>Bubble</u>.</p>
+            <p>If we want to use <u>Capturing</u>, we should use the third argument in addEventListener() as <span id="span1">true</span>.</p>
+            <h3>What is Event Delagation?</h3>
+            <p></p>
+            <div class="box-1">
+                <p>Box-1</p>
+                <div class="box-2">
+                    <p>Box-2</p>
+                    <div class="box-3">
+                        <p>Box-3</p>
+                    </div>
+                </div>
+            </div>
             
         </div>
     </section>
