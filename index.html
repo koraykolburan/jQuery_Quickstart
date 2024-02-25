@@ -72,8 +72,6 @@
             <p>Event Capturing is Although when you click on the third div that you have nested 3 div boxes before, it triggered from top to bottom like from box-1 to box-2 and box-3. (<span id="span1">Opens from the outside-in.</span>)</p>
             <p>As default, JavaScript set the event flow as <u>Bubble</u>.</p>
             <p>If we want to use <u>Capturing</u>, we should use the third argument in addEventListener() as <span id="span1">true</span>.</p>
-            <h3>What is Event Delagation?</h3>
-            <p></p>
             <div class="box-1">
                 <p>Box-1</p>
                 <div class="box-2">
@@ -82,10 +80,38 @@
                         <p>Box-3</p>
                     </div>
                 </div>
-            </div>
-            
+            </div> 
         </div>
-    </section>
+        <br>
+    </section> 
+    <hr>
+    <article>
+        <div class="content2">
+            <h3>So, What is Event Delegation?</h3>
+            <p>When we work with bigger data table like it has 10 grids and 100 rows. If we want to make every cells can be editable when they click. <br>
+            We need to add <span>addEventListener()</span> to all cells and this will be a huge performance problem that cause browser crash.</p>
+            <p>Instead of this, we can add only one <b>event listener</b> to table of parent using with <span>Event Delegation</span>, we can stop the click event and then we can determine to which cell has been clicked! </p>
+            <div class="container">
+                <div class="tile"></div>
+                <div class="tile"></div>
+                <div class="tile"></div>
+                <div class="tile"></div>
+                <div class="tile"></div>
+                <div class="tile"></div>
+                <div class="tile"></div>
+                <div class="tile"></div>
+                <div class="tile"></div>
+                <div class="tile"></div>
+                <div class="tile"></div>
+                <div class="tile"></div>
+                <div class="tile"></div>
+                <div class="tile"></div>
+                <div class="tile"></div>
+                <div class="tile"></div>
+                <div class="tile"></div>
+            </div>
+        </div>
+    </article>
 
     <script src="script.js"></script>
 </body>

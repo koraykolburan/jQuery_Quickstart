@@ -27,3 +27,19 @@ $('.box-2').on("click", e => {
 $('.box-3').on("click", e => {
     console.log('Box-3 has cliked!');   
 })
+
+// Event Delegation -----------------
+function random(number) {
+    return Math.floor(Math.random() * number);
+}
+
+function bgChange() {
+    const rndCol = 'rgb(${random(255)} ${random(250)} ${random(250)} )';
+    return rndCol;
+}
+
+const container = $(".container");
+
+container.on("click", (event) => {
+    event.target.style.backgroundColor = bgChange();
+})
