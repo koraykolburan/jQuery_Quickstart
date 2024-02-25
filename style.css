@@ -123,20 +123,19 @@ header {
 
 /* Event Bubbling  */
 .box-1{
-    position: absolute;
+    position: relative;
     border: 1px solid pink;
     border-radius: 12px;
     background-color: pink;
     width: 75%;
     height: 50%;
-    display: inline;
     left: 12.5%;
     right: 12.5%;
     text-align: center;
 }
 
 .box-2 {
-    position: absolute;
+    position: relative;
     border: 1px solid blue;
     border-radius: 12px;
     background-color: blue;
@@ -163,7 +162,17 @@ header {
 /* Event Delegation */
 
 .tile {
-    height: 100%;
-    width: 25%;
+    height: 100px;
+    width: 20%;
     float: left;
+    border: 1px solid black;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.content2 > h4 {
+    text-align: center;
+    font-style: italic;
+    color: darkblue;
+    font-size: x-large;
 }
