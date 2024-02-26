@@ -121,6 +121,10 @@ header {
     z-index: 1;
 }
 
+h2:first-of-type {
+    text-align: center;
+}
+
 /* Event Bubbling  */
 .box-1{
     position: relative;
@@ -168,6 +172,7 @@ header {
     border: 1px solid black;
     border-radius: 12px;
     text-align: center;
+    cursor: pointer;
 }
 
 .content2 > h4 {
@@ -175,4 +180,49 @@ header {
     font-style: italic;
     color: darkblue;
     font-size: x-large;
+}
+
+/* Event and Selectors */
+.article2 {
+    margin-top: 150px;
+}
+.content3 h3 {
+    text-align: center;
+    margin-top: 250px;
+}
+.content3 > p {
+    background-color: #a12e2e;
+    color: white;
+    border-radius: 12px;
+    text-align: center;
+}
+.content3 > button {
+    margin: auto;
+    width: 150px;
+    height: 30px;
+    font-size: 17px;
+    text-align: center;
+}
+
+#btn1 {
+    margin-left:25%
+}
+
+#btn2 {
+    margin-left: 25%;
+}
+#btn3 {
+    margin: auto;
+    width: 150px;
+    height: 30px;
+    font-size: 17px;
+    text-align: center;
+    border-radius: 50px;
+    color: white;
+    background-color: #333;
+    cursor: pointer;
+}
+
+#btn3:hover {
+    background-color: #9d9898;
 }
