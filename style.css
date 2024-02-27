@@ -256,9 +256,9 @@ button.darkMode-wrapper {
 }
 .content3 > p.darkMode-wrapper {
     background-color: grey;
-} */
+} 
 
 .menu, .menu-item, a, .menu-item-info, .cf, ul, li, .account.darkMode-wrapper {
     background-color: brown;
     border-radius: 12px;    
-} 
+} */
