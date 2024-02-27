@@ -68,36 +68,46 @@ $("#p1").mouseleave(function(){
 
 //For Dark Mode-----------------------------------------------------------------------------------------------
 
+/*
 function darkMode(evt){
     $("#btn3").on("click", function(){
-        $("*").css("background-color", "#1D2A35");
-        $("*").css("color", "white");
+      $("body").css("background-color", "#1D2A35");
+        $("body").css("color", "white");
         $("p").css("background-color", "none");
+        $("p").css("border-radius", "12px");
         $(".box-1").css("background-color", "pink");
         $(".box-1 > p").css("background-color", "pink");
         $(".box-2 > p").css("background-color", "blue");
-        $(":button").css("background-color", "darkgrey");
-        $(":button").css("border-radius", "12px");
         $(".box-1 > p").css("color", "black");
         $(".box-2").css("background-color", "blue");
         $(".box-3").css("background-color", "green");
         $(".box-3 > p").css("background-color", "green");
-        $(".content3 > p").css("background-color", "grey");
-        $(".tile").css("border-color", "grey");
+        $(":button").css("background-color", "darkgrey");
+        $(":button").css("border-radius", "12px");
+        $(".content3 > p").css("background-color", "grey"); 
+        $(".tile").css("border-color", "grey"); 
         $(".menu, .menu-item, a, .menu-item-info, .cf, ul, li, .account").css("background-color", "brown");
-        $(".menu, .menu-item, a, .menu-item-info, .cf, ul, li, .account").css("border-radius", "12px");
-        $("p").css("border-radius", "12px");
+        $(".menu, .menu-item, a, .menu-item-info, .cf, ul, li, .account").css("border-radius", "12px"); 
     });
 }
 
 $(document).ready("click", darkMode()); //this event gets more inline css that's why we use toggleClass instead of this complexity
 
 // We can do this with toggleClass, it will be more easier and more interactive.
-// We need to add CSS-class(wrapper) like above but inside of the css document and a couple of Js(jQuery) codes
+// We need to add CSS-class(wrapper) like above but inside of the css document and a couple of Js(jQuery) codes */
 
+let anotherColor = $("body");
+let button = $("#btn3");
 
-
-
+button.on("click", function(){
+    anotherColor.toggleClass("darkMode-wrapper"); //this function adds the "darkMode-wrapper" class to the body(anothercolor)
+    $(".tile").css("border-color", "grey");
+    if(anotherColor.hasClass("darkMode-wrapper")){
+        button.text("Light Mode!");
+    } else {
+        button.text("Dark Mode!");
+    }
+})
 
 
 //-----------------------------------------------------------------------------------------------------------------

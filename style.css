@@ -165,7 +165,7 @@ h2:first-of-type {
 
 /* Event Delegation */
 
-.tile {
+.content2 #container .tile {
     height: 100px;
     width: 20%;
     float: left;
@@ -178,7 +178,6 @@ h2:first-of-type {
 .content2 > h4 {
     text-align: center;
     font-style: italic;
-    color: darkblue;
     font-size: x-large;
 }
 
@@ -211,7 +210,9 @@ h2:first-of-type {
 #btn2 {
     margin-left: 25%;
 }
-#btn3, #btn4 {
+
+/* ----------------------------------------------- Dark Mode --------------------------------------------- */
+#btn3 {
     margin: auto;
     width: 150px;
     height: 30px;
@@ -221,8 +222,43 @@ h2:first-of-type {
     color: white;
     background-color: #333;
     cursor: pointer;
+    position: fixed;
+    bottom: 0;
+    left: 0;
 }
 
 #btn3:hover {
     background-color: #9d9898;
 }
+
+body.darkMode-wrapper {
+    background-color: #1D2A35;
+    color: white;
+}
+
+p.darkMode-wrapper {
+    background: none;
+    border-radius: 12px;
+}
+ 
+.box-1, p.darkMode-wrapper {
+    background-color: pink ;
+    color: black;
+}
+/*
+.box-2.darkMode-wrapper {
+    background-color: blue ;
+}
+
+button.darkMode-wrapper {
+    background-color: darkgrey;
+    border-radius: 12px;
+}
+.content3 > p.darkMode-wrapper {
+    background-color: grey;
+} */
+
+.menu, .menu-item, a, .menu-item-info, .cf, ul, li, .account.darkMode-wrapper {
+    background-color: brown;
+    border-radius: 12px;    
+} 
