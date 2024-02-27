@@ -211,7 +211,7 @@ h2:first-of-type {
 #btn2 {
     margin-left: 25%;
 }
-#btn3 {
+#btn3, #btn4 {
     margin: auto;
     width: 150px;
     height: 30px;

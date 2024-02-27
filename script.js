@@ -69,7 +69,7 @@ $("#p1").mouseleave(function(){
 //For Dark Mode-----------------------------------------------------------------------------------------------
 
 function darkMode(evt){
-    $("#btn3").click(function(){
+    $("#btn3").on("click", function(){
         $("*").css("background-color", "#1D2A35");
         $("*").css("color", "white");
         $("p").css("background-color", "none");
@@ -90,6 +90,14 @@ function darkMode(evt){
     });
 }
 
-$(document).ready("click", darkMode());
+$(document).ready("click", darkMode()); //this event gets more inline css that's why we use toggleClass instead of this complexity
+
+// We can do this with toggleClass, it will be more easier and more interactive.
+// We need to add CSS-class(wrapper) like above but inside of the css document and a couple of Js(jQuery) codes
+
+
+
+
+
 
 //-----------------------------------------------------------------------------------------------------------------
