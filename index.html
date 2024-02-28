@@ -17,8 +17,8 @@
         <nav>
             <ul id="main-menu" class="menu">
                 <li class="menu-item">
-                    <a href="#">Home</a>
-                    <div class="menu-item-info">
+                    <a href="#" id="home">Home</a>
+                    <div class="sub-home">
                         <ul>
                             <li >
                                 <a href="#">2024 Season for Woman</a>
@@ -35,19 +35,9 @@
                 <li class="menu-item">
                     <input type="text" placeholder="Search..." id="plc1"></input>
                     <button type="submit"><i class="fa fa-search"></i></button>
-                    <div class="menu-item-info">
-                        <ul>
-                            <li><a href="#">Jackets and coats</a></li>
-                            <li><a href="#">Trousers</a></li>
-                            <li><a href="#">Sweatshirts and hoodies</a></li>
-                            <li><a href="#">T-shirts</a></li>
-                            <li><a href="#">Shoes</a></li>
-                            <li><a href="#">Accessories</a></li>
-                        </ul>
-                    </div>
                 </li>
                 <li class="menu-item right-corner">
-                    <a href="#">Account</a>
+                    <a href="#" id="account">Account</a>
                     <div class="account">
                         <ul>
                             <li><a href="#">Sign In</a></li>
@@ -133,16 +123,29 @@
             <button id="btn1">Hide!</button>
         </div>
     </article>
+    <hr>
     <article class="article3">
         <div class="content4">
-            <h3>The mouseenter(), mouseleave(), mousedown(), mouseup() Events</h3>
-            <p id="p1">Enter this paragraph.</p>
+            <h3>Some Events Examples</h3>
+            <p id="p1"> >> Enter this paragraph. << </p>
             <p id="p2"></p>
+            <p>Note:There is a <span id="span1">hover()</span> events that is a combination of the <span id="span1">mouseenter()</span> and <span id="span1">mouseleave()</span> methods.</p>
+        </div>
+        <div class="content5">
+            <h3>focus() & blur() Events</h3>
+            <form action="#" for="name" >
+                <label for="name">Name:</label>
+                <input type="text" name="Name" id="name" autocomplete="name">
+                <label for="email">Email:</label>
+                <input type="text" name="Email" id="email" autocomplete="email">
+            </form>
         </div>
     </article>
     <article class="article4">
 
     </article>
+
+    <!-- Dark Mode -->
     <aside>
         <button id="btn3">Dark Mode!</button>
         <div class="darkMode-wrapper"></div>

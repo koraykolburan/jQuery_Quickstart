@@ -47,7 +47,7 @@ h1 {
     padding: 1em;
 }
 
-.menu-item-info {
+.sub-home {
     display: none;
     position: absolute;
     left: 0;
@@ -113,7 +113,7 @@ h1 {
 }
 
 #span1 {
-    color:darkorchid;
+    text-decoration: underline;
 }
 
 header {
@@ -214,6 +214,9 @@ h2:first-of-type {
     cursor: pointer;
 }
 
+.content4, .content5 h3 {
+    text-align: center;
+}
 
 /* ----------------------------------------------- Dark Mode --------------------------------------------- */
 #btn3 {
@@ -248,4 +251,16 @@ p.darkMode-wrapper {
 .box-1, p.darkMode-wrapper {
     background-color: pink ;
     color: black;
+}
+.content5 {
+    padding: 20px;
+    border: 3px solid grey;
+    border-radius: 12px;
+}
+
+.content5 form {
+    display: grid;
+    position: relative;
+    width: 40%;
+    margin-left: 30%;
 }

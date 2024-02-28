@@ -1,8 +1,7 @@
 //on() API - is an Event Handler Function
-function toggleInfoPanel(evt){
-    $(this).siblings('.menu-item-info, .account').toggleClass('is-visible'); //toggleClass add or remove elements
-    //$(this).siblings('.account').toggleClass('is-visible');
-}
+ /* function toggleInfoPanel(evt){
+    $(this).siblings('.menu-item-info, .account').toggle('is-visible'); //toggleClass add or remove elements
+} */
 
 /* 
 $('.menu-item > a').on("mouseover", toggleInfoPanel);
@@ -15,7 +14,37 @@ $('.menu-item > a').on("mouseover", toggleInfoPanel).on("mouseout", toggleInfoPa
 */
 
 //You can provide multiple events name in the "on" call! (if you set same function)
-$('.menu-item > a').on("mouseover mouseout", toggleInfoPanel);
+//$('.menu-item > a').on("mouseover mouseout click", toggleInfoPanel);
+
+let menu1 = $('.menu-item > a');
+let home = $('.sub-home');
+let accnt = $('.account');
+
+$('#home, .sub-home').hover(
+    function(){
+        home.stop().fadeIn();
+    },
+    function(){
+        home.stop().fadeOut();
+    }
+)
+$('#account, .account').hover(
+    function(){
+        accnt.stop().slideDown();
+    },
+    function(){
+        accnt.stop().slideUp();
+    }
+)
+//Changed this because when you hover on submenu, the submenu was disappearing.
+
+
+
+/*submenu.hover(function() {
+    $(this).$('.menu-item-info > ul > li').css("display", "block");
+}) */
+
+
 
 // Event Bubbling
 $('.box-1').on("click", e => {
@@ -124,3 +153,10 @@ button.on("click", function(){
 
 
 //-----------------------------------------------------------------------------------------------------------------
+// focus and blur Events
+$('input').focus(function(){
+    $(this).css("background-color", "pink");
+    });
+$('input').blur(function(){
+    $(this).css("background-color", "lightblue");
+});
