@@ -46,13 +46,26 @@ container.on("click", (evt) => {
 
 // Event and Selector
 
+/*
 $("#btn1").click(function(){
         $("p:odd").hide();
     });
 
 $("#btn2").click(function(){
     $("p:odd").show();
+}) */
+
+let button1 = $("#btn1");
+
+button1.on("click", function(){
+    button1.text(button1.text() == "Hide!" ? "Show!" : "Hide!" );
+    $("p:odd").toggle("slow", function(){
+        //animation complete.
+    });
 })
+// Was merged two buttons in the same same button
+
+
 
 $("#p1").mouseenter(function(){
     $("#p2").text("You entered the first paragraph! Yaaay!");
@@ -101,7 +114,7 @@ let button = $("#btn3");
 
 button.on("click", function(){
     anotherColor.toggleClass("darkMode-wrapper"); //this function adds the "darkMode-wrapper" class to the body(anothercolor)
-    $(".tile").css("border-color", "grey");
+    $(".tile").css("border-color", "grey");  // this is inline css
     if(anotherColor.hasClass("darkMode-wrapper")){
         button.text("Light Mode!");
     } else {
