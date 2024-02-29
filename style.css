@@ -195,7 +195,7 @@ h2:first-of-type {
     border-radius: 12px;
     text-align: center;
 }
-.content3 > button {
+#btn1, #btn2 {
     margin: auto;
     width: 150px;
     height: 30px;
@@ -203,18 +203,18 @@ h2:first-of-type {
     text-align: center;
 }
 
-#btn1 {
+#btn1, #btn2 {
     display: block;
     border-radius: 12px;
 }
-#btn1:hover {
+#btn1:hover, #btn2:hover {
     background: #333;
     border-radius: 12px;
     color: white;
     cursor: pointer;
 }
 
-.content4, .content5 h3 {
+.content4, .content5, .content6, .content6 > h3 {
     text-align: center;
 }
 
@@ -252,7 +252,7 @@ p.darkMode-wrapper {
     background-color: pink ;
     color: black;
 }
-.content5 {
+.content5, .content6 {
     padding: 20px;
     border: 3px solid grey;
     border-radius: 12px;
@@ -263,4 +263,23 @@ p.darkMode-wrapper {
     position: relative;
     width: 40%;
     margin-left: 30%;
+}
+
+/* Animation */
+.animation {
+    background: #05AA6D;
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    border-radius: 12px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.content6 > ul > li {
+    list-style-type: disc;
+    text-align: center;
+    list-style-position: inside;
 }

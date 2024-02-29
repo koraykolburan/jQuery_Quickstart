@@ -30,7 +30,7 @@ $('#home, .sub-home').hover(
 )
 $('#account, .account').hover(
     function(){
-        accnt.stop().slideDown();
+        accnt.stop().slideDown();  // If you want to hover on submenu you must use stop() in both functions.
     },
     function(){
         accnt.stop().slideUp();
@@ -160,3 +160,19 @@ $('input').focus(function(){
 $('input').blur(function(){
     $(this).css("background-color", "lightblue");
 });
+
+//Animations
+$('#btn2').click(function(){
+    let anm = $(".animation");
+    anm.animate({left:'1200px', opacity: '0.4'}, 'slow');
+    anm.animate({height:'150px', opacity: '0.9'}, 'slow');
+    anm.animate({width:'160px', opacity: '0.9'}, 'slow');
+    anm.animate({fontSize:'1.5em', opacity: '0.8'}, 'slow');
+    anm.animate({top:'2000px', opacity: '0.4'}, 'slow');
+    anm.animate({left:'36px', opacity: '0.9'}, 'slow');
+    anm.animate({top:'2412px', opacity: '0.4'}, 'slow');
+    anm.animate({fontSize:'16px', opacity: '0.9'}, 'slow');
+    anm.animate({fontSize:'0', opacity: '0.9'}, 'slow');
+    anm.animate({height:'20px', opacity: '0.9'}, 'slow');
+    anm.animate({width:'20px', opacity: '0.9'}, 'slow');
+})
