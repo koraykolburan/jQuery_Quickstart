@@ -176,3 +176,11 @@ $('#btn2').click(function(){
     anm.animate({height:'20px', opacity: '0.9'}, 'slow');
     anm.animate({width:'20px', opacity: '0.9'}, 'slow');
 })
+
+//Set attr()
+$('#btn4').click(function(){
+    $('#ex1').attr({
+        'href' : "http://example2.com/",
+        'title' : "EXAMPLE!!!"
+    });
+})
