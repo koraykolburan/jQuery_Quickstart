@@ -5,10 +5,10 @@
 # Hover Dropdown Menu
 ![Image 1 03 2024 at 16 21](https://github.com/koraykolburan/jQuery_Quickstart/assets/80157575/0420ab3a-a2e2-401e-9540-e806c5d89fd4)
 
-# Dark Mode & Light Mode Switch, Event Bubbling, Event Capturing & Even Delagation
+# Dark Mode & Light Mode Switch, Event Bubbling, Event Capturing & Event Delagation
 ![Image 1 03 2024 at 16 22](https://github.com/koraykolburan/jQuery_Quickstart/assets/80157575/fdd42a46-c24a-4338-baa2-94f9e14fd9c1)
 
-# jQuery Events, Effects
+# jQuery Events & Effects
 ![Image 1 03 2024 at 16 23](https://github.com/koraykolburan/jQuery_Quickstart/assets/80157575/4620da04-2b0a-4fb2-bd22-976ea885364d)
 ![Image 1 03 2024 at 16 23](https://github.com/koraykolburan/jQuery_Quickstart/assets/80157575/095eec44-a39c-4040-a55f-2f6d7c627508)
 
