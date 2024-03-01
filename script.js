@@ -168,9 +168,9 @@ $('#btn2').click(function(){
     anm.animate({height:'150px', opacity: '0.9'}, 'slow');
     anm.animate({width:'160px', opacity: '0.9'}, 'slow');
     anm.animate({fontSize:'1.5em', opacity: '0.8'}, 'slow');
-    anm.animate({top:'2000px', opacity: '0.4'}, 'slow');
+    anm.animate({top:'3000px', opacity: '0.4'}, 'slow');
     anm.animate({left:'36px', opacity: '0.9'}, 'slow');
-    anm.animate({top:'2412px', opacity: '0.4'}, 'slow');
+    anm.animate({top:'3412px', opacity: '0.4'}, 'slow');
     anm.animate({fontSize:'16px', opacity: '0.9'}, 'slow');
     anm.animate({fontSize:'0', opacity: '0.9'}, 'slow');
     anm.animate({height:'20px', opacity: '0.9'}, 'slow');
